@@ -653,7 +653,6 @@ a.a_custom, a.a_custom:hover {
     margin-bottom: 8px; }
   .product_description_image {
     position: absolute;
-    width: 600px;
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
