@@ -1826,12 +1826,13 @@ a.a_custom, a.a_custom:hover {
 @media (max-width: 767.98px) {
   .modal_container {
     height: auto;
+    min-height: 0;
+    padding-bottom: 50px;
+    max-width: 400px;
     top: auto;
     right: 10px;
     bottom: auto;
-    left: 10px; }
-  .modal_close {
-    position: fixed; } }
+    left: 10px; } }
 
 @-webkit-keyframes fade_in {
   0% {
@@ -2448,6 +2449,9 @@ header {
     background: url("../images/main_bg-dark.jpg") center;
     background: url("../images/main_bg-dark.jpg") center fixed;
     background-size: cover; }
+    @media (max-width: 767.98px) {
+      .hero_section .slide {
+        background: url("../images/main_bg-dark.jpg") center; } }
     .hero_section .slide:before {
       content: '';
       display: block;
@@ -2475,6 +2479,9 @@ header {
       background: url("../images/main_bg-dark.jpg") center;
       background: url("../images/main_bg-dark.jpg") center fixed;
       background-size: cover; }
+      @media (max-width: 767.98px) {
+        .hero_section .slide:after {
+          background: url("../images/main_bg-dark.jpg") center; } }
   .hero_section .landing_header {
     max-width: 440px;
     font-size: 72px;
