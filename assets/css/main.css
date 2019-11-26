@@ -484,7 +484,7 @@ a.a_custom, a.a_custom:hover {
     bottom: 0;
     left: 0;
     text-align: center;
-    -webkit-transition: .15s;
+    -moz-transition: .15s;
     transition: .15s; }
   .form_field .input:-ms-input-placeholder {
     color: #95a5a6;
@@ -497,7 +497,7 @@ a.a_custom, a.a_custom:hover {
     bottom: 0;
     left: 0;
     text-align: center;
-    -webkit-transition: .15s;
+    -ms-transition: .15s;
     transition: .15s; }
   .form_field .input::-ms-input-placeholder {
     color: #95a5a6;
@@ -510,7 +510,7 @@ a.a_custom, a.a_custom:hover {
     bottom: 0;
     left: 0;
     text-align: center;
-    -webkit-transition: .15s;
+    -ms-transition: .15s;
     transition: .15s; }
   .form_field .input + .input_label, .form_field .input::placeholder {
     color: #95a5a6;
@@ -2432,6 +2432,7 @@ header {
   .hero_section .slide {
     position: relative;
     overflow: hidden;
+    background: url("../images/main_bg-dark.jpg") center;
     background: url("../images/main_bg-dark.jpg") center fixed;
     background-size: cover; }
     .hero_section .slide:before {
@@ -2458,6 +2459,7 @@ header {
       left: auto;
       margin-top: auto;
       margin-bottom: auto;
+      background: url("../images/main_bg-dark.jpg") center;
       background: url("../images/main_bg-dark.jpg") center fixed;
       background-size: cover; }
   .hero_section .landing_header {
