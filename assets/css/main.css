@@ -2312,6 +2312,19 @@ a.a_custom, a.a_custom:hover {
   display: flex;
   flex-wrap: wrap; }
 
+.scroll_to_top {
+  z-index: 90;
+  position: fixed;
+  top: auto;
+  right: 20px;
+  bottom: 20px;
+  left: auto;
+  border: 1px solid white;
+  box-shadow: 0 0 5px 5px white; }
+  @media (max-width: 767.98px) {
+    .scroll_to_top {
+      display: none; } }
+
 .section {
   padding-top: 80px;
   padding-bottom: 80px;

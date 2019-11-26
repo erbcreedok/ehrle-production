@@ -174,6 +174,17 @@ var conceptsBreakpoint = 920;
 var productsBreakpoint = 776;
 Vue.use(vueView());
 
+Vue.component('scroll-top', {
+  props: ['percent'],
+  methods: {
+    scrollTop() {
+      window.scrollTo(0, 0);
+    }
+  },
+  template:
+    `<button class="btn_circle scroll_to_top" @click="scrollTop"><img src="./assets/images/arrow-up.svg" alt=""></button>`,
+});
+
 Vue.component('percent-svg', {
   props: ['percent'],
   computed: {
@@ -294,6 +305,7 @@ Vue.component('factor-circle', {
       selectedNumber: 0,
       selectedAward: 0,
       windowWidth: window.innerWidth,
+      windowScrollTop: window.scrollY,
       selectedLang: 'ru',
       languages: ['ru', 'kz', 'en'],
       isLanguagesSelecting: false,
@@ -301,6 +313,7 @@ Vue.component('factor-circle', {
       selectedProgram: null,
       videoPlayed: false,
       smallVideoPlayed: false,
+      showScroll: false,
     },
     computed: {
       factorElements() {
@@ -350,6 +363,9 @@ Vue.component('factor-circle', {
       windowWidth(to) {
         this.setDefaultIndexes(to);
       },
+      windowScrollTop(to) {
+        this.showScroll = to > 800;
+      }
     },
     methods: {
       setProgram(value) {
@@ -447,10 +463,14 @@ Vue.component('factor-circle', {
         this.showModal = true;
         document.body.style.overflow = 'hidden';
       },
+      getWindowScrollTop() {
+        this.windowScrollTop = window.scrollY;
+      }
     },
     mounted() {
       this.$nextTick(function() {
         window.addEventListener('resize', this.getWindowWidth);
+        window.addEventListener('scroll', this.getWindowScrollTop);
       });
       this.getWindowWidth();
       this.setDefaultIndexes();
