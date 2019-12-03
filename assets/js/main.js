@@ -387,6 +387,9 @@ Vue.component('factor-circle', {
       showScroll: false,
     },
     computed: {
+      conceptsLength() {
+        return document.querySelectorAll('.concept_radio').length;
+      },
       factorElements() {
         return document.querySelectorAll('.factor_item');
       },

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <title>Калькулятор - EHRLE</title>
+    <title>Активная пена - EHRLE</title>
 <meta name="google-site-verification" content="" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,12 +24,12 @@
 <!--<meta name="yandex-verification" content=""/>-->
 <link rel="stylesheet" href="./assets/css/main.css"/>
 <link rel="shortcut icon" href="/favicon.ico"/>
-  <!-- endbuild -->
+    <!-- endbuild -->
 </head>
 <body class="lang-ru">
 <div id="app">
-  <input type="hidden" value="chemistry" id="sitepage">
-  <header>
+    <input type="hidden" value="chemistry" id="sitepage">
+    <header>
 <div class="menu" :class="{'menu-opened': isMenuOpened}">
   <div class="container">
     <div class="menu_nav menu_row">
@@ -149,150 +149,59 @@
 </nav>
   <scroll-top v-if="showScroll"/>
 </header>
-  <div class="container content-first my-3">
-    <ul class="breadcrumbs">
-      <li class="breadcrumbs-item">
-        <a href="./">Главная</a>
-      </li>
-      <li class="breadcrumbs-item">
-        <span>Строительство мойки "под ключ"</span>
-      </li>
-    </ul>
-  </div>
-  <div class="container">
-    <div class="heading mb-3">
-      Строительство мойки “под ключ”
+    <div class="container content-first">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+                <a href="./">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+                <a href="tech-beskontakt.html">Технология</a>
+            </li>
+            <li class="breadcrumbs-item">
+                <span>Активная пена</span>
+            </li>
+        </ul>
     </div>
-    <p style="max-width: 555px;" class="text">
-      В этом калькуляторе Вы можете рассчитать «Под ключ» цену всех этапов строительства автомобильной мойки самообслуживания. Включая поставки котельного оборудования, обеспечивающего функцию «теплый пол» и режим подогрева воды.
-    </p>
-  </div>
-  <div class="container mt-5 calculator_container">
-    <div class="title mb-4">Калькулятор стройки</div>
-    <div class="row justify-content-between">
-      <div class="col-lg-7 col-md-8">
-        <div class="calculator">
-          <ul class="radio_tabs mb-4">
-            <li class="radio_tab radio_tab-selected">Модульная мойка</li>
-            <li class="radio_tab">Контейнерная мойка</li>
-          </ul>
-          <div class="label my-3">1. Детали мойки</div>
-          <div class="row">
-            <div class="col-12 mb-4">
-              <div class="text mb-2">Выберите вид мойки</div>
-              <div class="radio_buttons">
-                <div class="radio_button">Smart Wash</div>
-                <div class="radio_button">Smart Wash Plus</div>
-                <div class="radio_button">Jet Wash</div>
-                <div class="radio_button">Jet Wash Plus</div>
-                <div class="radio_button">Car Wash Plus Outdoor</div>
-              </div>
+    <section class="content pt-3 content_foam" id="foam">
+        <div class="container">
+            <h2 class="content_header">Активная пена</h2>
+            <p class="content_subtitle">Генератор пены является дополнительным оборудованием, которое можно установить на мойках EHRLE. Активная пена подается на посты мойки отдельным пистолетом и позволяет расширить возможности автомойки следующей программой мойки.</p>
+            <div class="text-center mb-5">
+      <span style="max-width: 500px; display: inline-block; padding: 10px 30px;">
+        <img src="./assets/images/foam.jpg" alt="" width="100%">
+      </span>
             </div>
-            <div class="col-md-6 mb-4">
-              <div class="text mb-2">Количество постов для мойки</div>
-              <div class="radio_buttons ">
-                <div class="radio_button radio_button-squared radio_button-selected">1</div>
-                <div class="radio_button radio_button-squared">2</div>
-                <div class="radio_button radio_button-squared">3</div>
-                <div class="radio_button radio_button-squared">4</div>
-                <div class="radio_button radio_button-squared">5</div>
-                <div class="radio_button radio_button-squared">6</div>
-              </div>
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <div class="video_embed">
+                        <iframe v-if="smallVideoPlayed" src="https://www.youtube.com/embed/9TH7N2sIk38?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div v-else @click="smallVideoPlayed=true" class="video_embed_image" style="background-image: url(./assets/images/video_play.jpg)"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p class="paragraph paragraph-j">Компания EHRLE является первым производителем бесконтактных автомоек использующих инновационную технологию активной пены с системой точной дозации МикроПорошка. Активная пена повышает эффективность мойки; под её воздействием грязь размягчается, что позволяет удалить даже самые стойкие загрязнения. При исползовании современного пневматического генератора пены нужно только 1,5 – 2% химического средства для получения густой, активной пены.</p>
+                    <p class="paragraph paragraph-j">Современный генератор пены из-за своих габаритов может применяется как в автомойках контейнерного типа так и модульного.</p>
+                    <p class="paragraph paragraph-j">Автономный компрессор и вспомогательный насос с регулятором давления гарантируют достижение постоянно одинаковых параметров пены, несмотря на число работающих постов. Регулировка пропорции смешивания компонентов позволяет получить оптимальный химический состав, а также густоту и объём пены. А благодаря отдельной системе хранения и подачи, мягкая пена всегда готова для применения.</p>
+                    <p class="paragraph paragraph-j">Опцией активной пены могут быть оборудованы как все посты на мойке, так и только выбранные. Генератор пены EHRLE может производить деликатную пену от 0,5 мм до 80 мм.</p>
+                </div>
             </div>
-            <div class="col-md-6 mb-4">
-              <div class="text mb-2">Количество пылесосов <span class="tooltip_container"><span class="icon icon-small icon-faq"></span><span class="tooltip_body">Количество пылесосов в автомойке</span></span></div>
-              <div class="radio_buttons">
-                <div class="radio_button radio_button-squared radio_button-selected">1</div>
-                <div class="radio_button radio_button-squared">2</div>
-                <div class="radio_button">Без пылесоса</div>
-              </div>
+            <div class="row px-5">
+                <div class="col-sm-6 col-lg-3 mb-2 mb-sm-0 px-0">
+                    <img src="./assets/images/foam1.jpg" alt="" style="width: 100%">
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-2 mb-sm-0  px-0">
+                    <img src="./assets/images/foam2.jpg" alt="" style="width: 100%">
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-2 mb-sm-0  px-0">
+                    <img src="./assets/images/foam3.jpg" alt="" style="width: 100%">
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-2 mb-sm-0  px-0">
+                    <img src="./assets/images/foam4.jpg" alt="" style="width: 100%">
+                </div>
             </div>
-            <div class="col-md-6 mb-4 pr-md-5">
-              <div class="text mb-2">Тип котла</div>
-              <div class="form_select form_select-block pr-md-2">
-                <select>
-                  <option value="1">Буду покупать участок</option>
-                  <option value="1">Не буду покупать участок</option>
-                </select>
-                <span class="form_select_arrow"></span>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="text mb-2">Цена за участок</div>
-              <div class="form_input">
-                <input type="text" placeholder="10,000,000 ₸"/>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4 pr-md-5">
-              <div class="text mb-2">Тип котла</div>
-              <div class="form_select form_select-block pr-md-2">
-                <select>
-                  <option value="1">На электричестве</option>
-                  <option value="1">На дровах</option>
-                  <option value="1">На углях</option>
-                </select>
-                <span class="form_select_arrow"></span>
-              </div>
-            </div>
-            <div class="col-12 mb-4">
-              <div class="text mb-2">Строительство под ключ</div>
-              <div class="form_checkboxes">
-                <label for="type" class="form_checkbox">
-                  <input type="checkbox" id="type">
-                  <span class="form_checkbox_label">Да, постройте мне мойку</span>
-                  <span class="form_checkbox_icon"></span>
-                </label>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="col-lg-5 col-md-4">
-        <div class="calculator_result">
-          <div class="calculator_result_wrapper">
-            <div class="calculator_result_header my-4">
-              <div class="label mb-2">Стоимость вашего проекта:</div>
-              <div class="heading heading-light">12,220,000 <span class="small" style="font-weight: 500">₸</span></div>
-            </div>
-            <div class="calculator_result_label d-flex justify-content-between flex-wrap align-items-center mt-4 mb-2">
-              <div class="label mb-1">Результаты расчёта</div>
-              <span class="pseudo_link">Скрыть детали</span>
-            </div>
-            <ul class="calculator_result_list ul_custom mb-4">
-              <li class="calculator_result_item d-flex flex-wrap justify-content-between">
-                <span class="text">Стоймость мойка</span>
-                <strong class="text">8,820,000 ₸</strong>
-              </li>
-              <li class="calculator_result_item d-flex flex-wrap justify-content-between">
-                <span class="text">Стоймость мойка</span>
-                <strong class="text">8,820,000 ₸</strong>
-              </li>
-              <li class="calculator_result_item d-flex flex-wrap justify-content-between">
-                <span class="text">Стоймость мойка</span>
-                <strong class="text">8,820,000 ₸</strong>
-              </li>
-              <li class="calculator_result_item d-flex flex-wrap justify-content-between">
-                <span class="text">Стоймость мойка</span>
-                <strong class="text">8,820,000 ₸</strong>
-              </li>
-              <li class="calculator_result_item d-flex flex-wrap justify-content-between">
-                <span class="text">Стоймость мойка</span>
-                <strong class="text">8,820,000 ₸</strong>
-              </li>
-              <li class="calculator_result_item d-flex flex-wrap justify-content-between">
-                <span class="text">Стоймость мойка</span>
-                <strong class="text">8,820,000 ₸</strong>
-              </li>
-            </ul>
-            <div class="my-4 pt-2">
-              <button class="btn btn_primary">Получить консультацию</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer class="footer">
+    </section>
+    <footer class="footer">
   <div class="footer_container_row">
     <div class="item">
       <div class="footer_label">
@@ -391,7 +300,7 @@
   </div>
 </footer>
 
-  <div class="modal_wrapper" :class="{'modal_wrapper-show': showModal}">
+    <div class="modal_wrapper" :class="{'modal_wrapper-show': showModal}">
     <div class="modal_backdrop" @click="closeModal"></div>
     <div class="modal_container justify-content-between">
         <button class="btn_custom modal_close" @click="closeModal"><img src="./assets/images/menu_close.svg" alt=""></button>
