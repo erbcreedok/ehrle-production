@@ -30,6 +30,9 @@
   src: url("../fonts/Qanelas/Qanelas-Black.ttf");
   font-weight: 900; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: 'Qanelas', sans-serif;
   font-size: 14px;
@@ -2817,49 +2820,49 @@ a.a_custom, a.a_custom:hover {
   .program_icon:nth-child(2) {
     opacity: 1; }
   .program_icon:nth-child(3) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(4) {
-    opacity: 1; }
+    opacity: 0.9; }
   .program_icon:nth-child(5) {
-    opacity: 1; }
+    opacity: 0.9; }
   .program_icon:nth-child(6) {
-    opacity: 1; }
+    opacity: 0.9; }
   .program_icon:nth-child(7) {
     opacity: 0.9; }
   .program_icon:nth-child(8) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(9) {
     opacity: 0.9; }
   .program_icon:nth-child(10) {
     opacity: 0.9; }
   .program_icon:nth-child(11) {
-    opacity: 1; }
-  .program_icon:nth-child(12) {
-    opacity: 1; }
-  .program_icon:nth-child(13) {
     opacity: 0.9; }
+  .program_icon:nth-child(12) {
+    opacity: 0.9; }
+  .program_icon:nth-child(13) {
+    opacity: 1; }
   .program_icon:nth-child(14) {
     opacity: 1; }
   .program_icon:nth-child(15) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(16) {
-    opacity: 1; }
+    opacity: 0.9; }
   .program_icon:nth-child(17) {
-    opacity: 1; }
+    opacity: 0.9; }
   .program_icon:nth-child(18) {
     opacity: 0.9; }
   .program_icon:nth-child(19) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(20) {
-    opacity: 1; }
+    opacity: 0.9; }
   .program_icon:nth-child(21) {
-    opacity: 1; }
+    opacity: 0.9; }
   .program_icon:nth-child(22) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(23) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(24) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(25) {
     opacity: 1; }
   .program_icon:nth-child(26) {
@@ -2867,11 +2870,126 @@ a.a_custom, a.a_custom:hover {
   .program_icon:nth-child(27) {
     opacity: 1; }
   .program_icon:nth-child(28) {
-    opacity: 1; }
+    opacity: 0.9; }
   .program_icon:nth-child(29) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(30) {
-    opacity: 0.9; }
+    opacity: 1; }
+
+.business_step {
+  position: relative;
+  max-width: 100%;
+  padding-bottom: 48px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: flex; }
+  .business_step:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #ecf0f1;
+    width: 8px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto; }
+  .business_step:after {
+    content: '';
+    display: block;
+    position: absolute;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: #d83139;
+    border-radius: 50%;
+    border: 5px solid #d9d9d9;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0; }
+
+.business_block {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 95%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 48px;
+  padding-right: 10px;
+  background: #ecf0f1; }
+  .business_block-left {
+    margin-left: auto;
+    margin-right: 50%;
+    -webkit-transform: translate(-24px, 0);
+            transform: translate(-24px, 0); }
+    .business_block-left.business_block-hidden {
+      -webkit-transform: translate(-100px, 0);
+              transform: translate(-100px, 0); }
+  .business_block-right {
+    margin-left: 50%;
+    margin-right: auto;
+    -webkit-transform: translate(24px, 0);
+            transform: translate(24px, 0); }
+    .business_block-right.business_block-hidden {
+      -webkit-transform: translate(100px, 0);
+              transform: translate(100px, 0); }
+  .business_block-hidden {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .5s ease-out;
+    transition: .5s ease-out; }
+  .business_block .title {
+    margin-bottom: 12px; }
+  .business_block .number {
+    position: absolute;
+    color: #d83139;
+    font-size: 48px;
+    top: 3px;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    font-weight: 800;
+    text-align: center;
+    width: 48px; }
+  .business_block .ul_classic {
+    margin-top: 5px;
+    margin-bottom: 10px; }
+
+@media (max-width: 991.98px) {
+  .business_step {
+    padding-left: 0;
+    padding-right: 24px; }
+    .business_step:before {
+      margin-left: auto;
+      margin-right: 14px;
+      width: 4px; }
+    .business_step:after {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: #d83139;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: 4px; }
+  .business_block {
+    width: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    margin-left: 0;
+    margin-right: 0; }
+    .business_block-hidden, .business_block-hidden.business_block-left, .business_block-hidden.business_block-right {
+      -webkit-transform: translate(-100px, 0);
+              transform: translate(-100px, 0); } }
 
 .section {
   padding-top: 80px;
@@ -3283,6 +3401,33 @@ header {
     margin-right: auto;
     text-align: center;
     max-width: 848px; }
+
+.calculator_section {
+  padding-left: 20px;
+  padding-right: 20px; }
+  .calculator_section .section_title {
+    max-width: none; }
+  .calculator_section .calculator_box {
+    max-width: 555px;
+    background: #ecf0f1;
+    border-radius: 8px;
+    padding: 32px 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+    margin-bottom: 48px; }
+    .calculator_section .calculator_box .box_image {
+      height: 96px;
+      margin-bottom: 16px; }
+      .calculator_section .calculator_box .box_image img {
+        height: 100%; }
+    .calculator_section .calculator_box .title {
+      line-height: 1.55;
+      max-width: 263px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 48px; }
 
 .footer {
   position: relative;
