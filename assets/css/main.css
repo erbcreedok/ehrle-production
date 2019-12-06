@@ -1,5 +1,6 @@
 @import url(1-vendor/bootstrap-reboot.min.css);
 @import url(1-vendor/bootstrap-grid.min.css);
+@import url(1-vendor/vue-image-lightbox.min.css);
 @font-face {
   font-family: 'Qanelas';
   src: url("../fonts/Qanelas/Qanelas-Regular.ttf");
@@ -1729,7 +1730,9 @@ a.a_custom, a.a_custom:hover {
     overflow: hidden;
     border-radius: 8px;
     background: #ecf0f1;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in; }
     .object_gallery_selected_image img {
       position: absolute;
       width: 100%;
@@ -1747,7 +1750,9 @@ a.a_custom, a.a_custom:hover {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
-    background: #ecf0f1; }
+    background: #ecf0f1;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in; }
     .object_gallery_thumbnail img {
       position: absolute;
       width: 100%;
@@ -1762,6 +1767,7 @@ a.a_custom, a.a_custom:hover {
       right: 0;
       bottom: 0;
       left: 0;
+      z-index: 1;
       background: rgba(44, 62, 80, 0.5); }
     .object_gallery_thumbnail-blurred > span {
       position: absolute;
@@ -2814,43 +2820,43 @@ a.a_custom, a.a_custom:hover {
   .program_icon:nth-child(4) {
     opacity: 0.9; }
   .program_icon:nth-child(5) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(6) {
     opacity: 1; }
   .program_icon:nth-child(7) {
     opacity: 0.9; }
   .program_icon:nth-child(8) {
-    opacity: 1; }
-  .program_icon:nth-child(9) {
     opacity: 0.9; }
+  .program_icon:nth-child(9) {
+    opacity: 1; }
   .program_icon:nth-child(10) {
     opacity: 0.9; }
   .program_icon:nth-child(11) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(12) {
     opacity: 0.9; }
   .program_icon:nth-child(13) {
-    opacity: 1; }
+    opacity: 0.9; }
   .program_icon:nth-child(14) {
     opacity: 1; }
   .program_icon:nth-child(15) {
     opacity: 0.9; }
   .program_icon:nth-child(16) {
-    opacity: 1; }
-  .program_icon:nth-child(17) {
     opacity: 0.9; }
+  .program_icon:nth-child(17) {
+    opacity: 1; }
   .program_icon:nth-child(18) {
     opacity: 1; }
   .program_icon:nth-child(19) {
     opacity: 1; }
   .program_icon:nth-child(20) {
-    opacity: 1; }
+    opacity: 0.9; }
   .program_icon:nth-child(21) {
     opacity: 1; }
   .program_icon:nth-child(22) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(23) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(24) {
     opacity: 1; }
   .program_icon:nth-child(25) {
@@ -2864,7 +2870,7 @@ a.a_custom, a.a_custom:hover {
   .program_icon:nth-child(29) {
     opacity: 1; }
   .program_icon:nth-child(30) {
-    opacity: 1; }
+    opacity: 0.9; }
 
 .business_step {
   position: relative;
