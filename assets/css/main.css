@@ -169,6 +169,18 @@ a.a_custom, a.a_custom:hover {
       color: #d83139;
       text-decoration: none; }
 
+.small {
+  font-size: .75em; }
+
+.opacity-high {
+  opacity: .8; }
+
+.opacity-middle {
+  opacity: .5; }
+
+.opacity-low {
+  opacity: .3; }
+
 .btn_custom {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -2636,13 +2648,71 @@ a.a_custom, a.a_custom:hover {
     .radio_buttons .radio_button:last-child {
       margin-right: 0; }
 
+.calculator_container {
+  overflow: hidden; }
+
 .calculator_result {
   border-radius: 8px;
   border: solid 2px #ecf0f1;
   background-color: white; }
+  .calculator_result-fixed {
+    position: fixed;
+    top: 100%;
+    right: 10px;
+    bottom: auto;
+    left: 10px;
+    z-index: 10;
+    margin-top: -100px;
+    max-width: 690px;
+    box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.05);
+    margin-left: auto;
+    margin-right: auto; }
+    @media (max-width: 767.98px) {
+      .calculator_result-fixed {
+        max-width: 510px; } }
+    @media (max-width: 575.98px) {
+      .calculator_result-fixed {
+        max-width: 100%; }
+        .calculator_result-fixed .label {
+          max-width: 100%;
+          font-size: 16px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; } }
+  .calculator_result_bound {
+    margin-top: 99px;
+    height: 1px;
+    position: absolute; }
   .calculator_result_wrapper {
     padding-left: 24px;
     padding-right: 24px; }
+  .calculator_result_item {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ecf0f1; }
+    .calculator_result_item:last-child {
+      border-bottom: none; }
+  .calculator_result_list {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
+    visibility: visible;
+    max-height: 1000px;
+    overflow: auto;
+    opacity: 1;
+    margin-bottom: 1.5rem; }
+    .calculator_result_list-hide {
+      margin-bottom: 0;
+      opacity: 0;
+      max-height: 0;
+      visibility: hidden;
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      -webkit-transition: .3s ease-out;
+      transition: .3s ease-out; }
 
 .tooltip_container {
   display: inline-block;
@@ -2814,7 +2884,7 @@ a.a_custom, a.a_custom:hover {
   .program_icon:nth-child(1) {
     opacity: 0.9; }
   .program_icon:nth-child(2) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(3) {
     opacity: 1; }
   .program_icon:nth-child(4) {
@@ -2822,17 +2892,17 @@ a.a_custom, a.a_custom:hover {
   .program_icon:nth-child(5) {
     opacity: 0.9; }
   .program_icon:nth-child(6) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(7) {
     opacity: 0.9; }
   .program_icon:nth-child(8) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(9) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(10) {
     opacity: 0.9; }
   .program_icon:nth-child(11) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(12) {
     opacity: 1; }
   .program_icon:nth-child(13) {
@@ -2844,29 +2914,29 @@ a.a_custom, a.a_custom:hover {
   .program_icon:nth-child(16) {
     opacity: 0.9; }
   .program_icon:nth-child(17) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(18) {
-    opacity: 0.9; }
+    opacity: 1; }
   .program_icon:nth-child(19) {
     opacity: 0.9; }
   .program_icon:nth-child(20) {
-    opacity: 1; }
-  .program_icon:nth-child(21) {
-    opacity: 1; }
-  .program_icon:nth-child(22) {
     opacity: 0.9; }
+  .program_icon:nth-child(21) {
+    opacity: 0.9; }
+  .program_icon:nth-child(22) {
+    opacity: 1; }
   .program_icon:nth-child(23) {
-    opacity: 1; }
+    opacity: 0.9; }
   .program_icon:nth-child(24) {
-    opacity: 1; }
+    opacity: 0.9; }
   .program_icon:nth-child(25) {
     opacity: 1; }
   .program_icon:nth-child(26) {
-    opacity: 1; }
+    opacity: 0.9; }
   .program_icon:nth-child(27) {
-    opacity: 1; }
+    opacity: 0.9; }
   .program_icon:nth-child(28) {
-    opacity: 1; }
+    opacity: 0.9; }
   .program_icon:nth-child(29) {
     opacity: 0.9; }
   .program_icon:nth-child(30) {
