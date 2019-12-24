@@ -3691,7 +3691,7 @@ a.a_custom, a.a_custom:hover {
     .content-color .content_subtitle {
       color: #e6e6e6; }
   .content_image_wrapper {
-    border: #495d62 solid 1px;
+    border: #cfd9db solid 1px;
     border-radius: 4px;
     padding: 10px;
     position: relative; }
@@ -3707,7 +3707,7 @@ a.a_custom, a.a_custom:hover {
       margin-bottom: auto;
       height: 1px;
       width: 100vw;
-      background: #495d62; }
+      background: #cfd9db; }
     .content_image_wrapper:before {
       left: 100%; }
     .content_image_wrapper:after {
@@ -4320,10 +4320,6 @@ header {
     color: white;
     text-align: center; }
 
-.content_modul_line {
-  background: url("../images/etronic4_bg.jpg");
-  background-size: cover; }
-
 .content_lce_slm .paragraph-accent {
   color: #507192; }
 
@@ -4363,11 +4359,7 @@ header {
     cursor: pointer; }
 
 .content_real_time_display {
-  background: url("../images/realtimedisplay_bg.jpg");
-  background-size: cover; }
-
-.content_micropowder {
-  background: url("../images/micropowder_bg.jpg");
+  background: url("../images/realtimedisplay_bg_white.jpg");
   background-size: cover; }
 
 @keyframes spin-round {
@@ -4416,29 +4408,27 @@ header {
     -webkit-transform: rotate(720deg);
             transform: rotate(720deg); } }
 
-.content_metal {
-  background-image: url("../images/metal_bg.jpg");
-  background-size: cover; }
-  .content_metal .title {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 30px; }
-  .content_metal .metal_image {
+.content_metal .title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 30px; }
+
+.content_metal .metal_image {
+  width: 100%;
+  height: 1px;
+  padding-top: 50%;
+  position: relative;
+  border-bottom: 4px solid #d83139;
+  margin-bottom: 20px; }
+  .content_metal .metal_image img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: 1px;
-    padding-top: 50%;
-    position: relative;
-    border-bottom: 4px solid #d83139;
-    margin-bottom: 20px; }
-    .content_metal .metal_image img {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      -o-object-fit: cover;
-         object-fit: cover; }
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 /*# sourceMappingURL=main.css.map */
