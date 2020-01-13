@@ -828,20 +828,35 @@ a.a_custom, a.a_custom:hover {
     top: 0;
     margin-left: auto;
     margin-right: auto; }
+  @media (max-width: 1299.98px) {
+    .product_description {
+      max-width: 578px; }
+      .product_description_image {
+        width: 532px;
+        right: -532px;
+        margin-left: auto;
+        margin-right: auto; } }
   @media (max-width: 1199.98px) {
-    .product_description_image {
-      right: 0;
-      margin-left: 0;
-      margin-right: 0; } }
+    .product_description {
+      max-width: 450px; }
+      .product_description_image {
+        width: 510px;
+        right: -510px;
+        margin-left: auto;
+        margin-right: auto; } }
   @media (max-width: 991.98px) {
-    .product_description_image {
-      position: static;
-      width: 100%;
-      max-width: 400px;
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 0;
-      margin-bottom: 30px; } }
+    .product_description {
+      max-width: 578px; }
+      .product_description_image {
+        left: 100%;
+        right: 0;
+        position: static;
+        width: 100%;
+        max-width: 400px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 30px; } }
   @media (max-width: 776px) {
     .product_description {
       width: 100%;
