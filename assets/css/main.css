@@ -3688,6 +3688,21 @@ a.a_custom, a.a_custom:hover {
     margin-left: 20px;
     margin-right: auto; } }
 
+.animate_icon-spin {
+  display: block;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: spin-round 3s ease-in-out infinite;
+          animation: spin-round 3s ease-in-out infinite; }
+
+@keyframes spin-round {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
 @keyframes spin-round {
   from {
     -webkit-transform: rotate(0deg);
