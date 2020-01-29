@@ -38,7 +38,7 @@
         <div class="menu_links">
           <a class="menu_link" href="./prod-container_carwash.html" @click="closeMenu">Контейнерные автомойки CarWash</a>
           <a class="menu_link" href="./prod-module_carwash.html" @click="closeMenu">Модульные автомойки CarWash</a>
-          <a class="menu_link" href="./prod-jetwash.html" @click="closeMenu">Автомойка JetWash</a>
+          <a class="menu_link" href="./prod-smartwash.html" @click="closeMenu">Автомойка JetWash</a>
           <a class="menu_link" href="./prod-smartwash.html" @click="closeMenu">Автомойка SmartWash</a>
           <a class="menu_link" href="./prod-chemistry.html" @click="closeMenu">Химия</a>
           <a class="menu_link" href="./prod-metal.html" @click="closeMenu">Металлоконструкции</a>
@@ -117,20 +117,20 @@
     <a href="/" class="mr-xl-3 mr-1"><img class="nav_brand" src="./assets/images/ehrle_logo.png" height="40px" alt=""></a>
     <img class="nav_second_logo mr-xl-4 mr-2" src="./assets/images/german_logo.png" height="44px" alt="">
     <div class="link_contact icon_block d-none d-md-block ml-auto mr-xl-3 mr-0">
-      <a href="tel: +77025026285" target="_blank">
+      <a href="tel: +7 (702) 777-77-77" target="_blank">
         <div class="icon_block_icon">
           <img src="./assets/images/phone.svg" alt="">
         </div>
-        <div class="d-none d-xl-block icon_block_value pseudo_link">+7 (702) 502-62-85</div>
+        <div class="d-none d-xl-block icon_block_value pseudo_link">+7 (702) 777-77-77</div>
         <div class="d-none d-xl-block icon_block_subtitle">Номер телефона</div>
       </a>
     </div>
     <div class="link_contact icon_block d-none d-md-block ml-xl-3 ml-1 mr-auto">
-      <a href="mailto: ehrle_carwash@gmail.com" target="_blank">
+      <a href="mailto: EhrleCA@gmail.com" target="_blank">
         <div class="icon_block_icon">
           <img src="./assets/images/email.svg" alt="">
         </div>
-        <div class="d-none d-xl-block icon_block_value pseudo_link">ehrle_carwash@gmail.com</div>
+        <div class="d-none d-xl-block icon_block_value pseudo_link">EhrleCA@gmail.com</div>
         <div class="d-none d-xl-block icon_block_subtitle">Адрес почты</div>
       </a>
     </div>
@@ -155,9 +155,9 @@
 </nav>
   <scroll-top v-if="showScroll"/>
 </header>
-    <section class="content content-first content_modul_line" id="micropowder">
+    <section class="content content-first content-color content_modul_line" id="micropowder">
         <div class="container py-3">
-            <ul class="breadcrumbs">
+            <ul class="breadcrumbs breadcrumbs-on_color">
                 <li class="breadcrumbs-item">
                     <a href="./">Главная</a>
                 </li>
@@ -196,24 +196,6 @@
             </div>
         </div>
     </section>
-    
-<div class="container py-4">
-    <div class="d-flex justify-content-between">
-        
-        <a href="/tech-vda.html" class="a_custom d-none d-md-block">
-            <div class="pseudo_link"><i class="icon icon-arrow_prev"></i>Назад</div>
-            <span class="pl-4 opacity-high">Сертификат VDA</span>
-        </a>
-        
-        
-        <a href="/tech-ehrlesol.html" class="ml-auto a_custom text-right">
-            <div class="pseudo_link">Далее <i class="icon icon-arrow_next"></i></div>
-            <span class="pr-4 opacity-high">EHRLESol™</span>
-        </a>
-        
-    </div>
-</div>
-
     <footer class="footer">
   <div class="footer_container_row">
     <div class="item">
@@ -250,20 +232,20 @@
       </div>
       <ul class="ul_custom">
         <li class="footer_link footer_link_contact icon_block link_contact">
-          <a href="#" target="_blank">
+          <a href="tel: +7 (702) 777-77-77" target="_blank">
             <div class="icon_block_icon">
               <img src="./assets/images/phone.svg" alt="">
             </div>
-            <div class="icon_block_value pseudo_link">+7 (702) 502-62-85</div>
+            <div class="icon_block_value pseudo_link">+7 (702) 777-77-77</div>
             <div class="icon_block_subtitle">Номер телефона</div>
           </a>
         </li>
         <li class="footer_link footer_link_contact icon_block link_contact">
-          <a href="#" target="_blank">
+          <a href="mailto: EhrleCA@gmail.com" target="_blank">
             <div class="icon_block_icon">
               <img src="./assets/images/email.svg" alt="">
             </div>
-            <div class="icon_block_value pseudo_link">ehrle_carwash@gmail.com</div>
+            <div class="icon_block_value pseudo_link">EhrleCA@gmail.com</div>
             <div class="icon_block_subtitle">Адрес почты</div>
           </a>
         </li>
@@ -308,7 +290,7 @@
       <!--<a href="#" target="_blank">Обработка персональных данных</a>-->
       <!--<a href="#" target="_blank">Условия бронирования счёта</a>-->
       <!--<a href="#" target="_blank">Пользовательское соглашение</a>-->
-      <span>Copyright © 2019 <a href="/">EHRLE.</a> Все права защищены.</span>
+      <span>Copyright © 2014 - 2019 <a href="/">EHRLE.</a> Все права защищены.</span>
     </div>
   </div>
 </footer>
@@ -319,13 +301,13 @@
         <button class="btn_custom modal_close" @click="closeModal"><img src="./assets/images/menu_close.svg" alt=""></button>
         <div class="modal_body">
             <h2 class="heading ">Введите ваши данные</h2>
-            <form class="modal_form">
+            <form class="modal_form" @submit.prevent="handleSubmit('form modal')">
                 <div class="form_item form_field">
-                    <input type="text" class="input" id="modal_name" placeholder=" ">
+                    <input type="text" class="input" id="modal_name" placeholder=" " v-model="name">
                     <label for="modal_name" class="input_label"><span>Имя Фамилия</span></label>
                 </div>
                 <div class="form_item form_field">
-                    <input type="text" class="input" id="modal_phone" placeholder="+7 (000) 000 - 00 - 00">
+                    <input type="text" class="input" id="modal_phone" placeholder="+7 (000) 000 - 00 - 00"  v-mask="'+7(7##)### ## ##'" v-model="phone">
                     <label for="modal_phone" class="input_label"><span>Телефон</span></label>
                 </div>
                 <div class="form_item">
