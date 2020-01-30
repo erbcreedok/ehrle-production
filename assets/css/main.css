@@ -517,7 +517,7 @@ a.a_custom, a.a_custom:hover {
     bottom: 0;
     left: 0;
     text-align: center;
-    -moz-transition: .15s;
+    -webkit-transition: .15s;
     transition: .15s; }
   .form_field .input:-ms-input-placeholder {
     color: #95a5a6;
@@ -530,7 +530,7 @@ a.a_custom, a.a_custom:hover {
     bottom: 0;
     left: 0;
     text-align: center;
-    -ms-transition: .15s;
+    -webkit-transition: .15s;
     transition: .15s; }
   .form_field .input::-ms-input-placeholder {
     color: #95a5a6;
@@ -543,7 +543,7 @@ a.a_custom, a.a_custom:hover {
     bottom: 0;
     left: 0;
     text-align: center;
-    -ms-transition: .15s;
+    -webkit-transition: .15s;
     transition: .15s; }
   .form_field .input + .input_label, .form_field .input::placeholder {
     color: #95a5a6;
@@ -2546,8 +2546,25 @@ a.a_custom, a.a_custom:hover {
     margin-bottom: 0; }
   .menu .social_links {
     margin-top: 26px; }
-  .menu_map img {
-    width: 100%; }
+  .menu_map {
+    height: 1px;
+    padding-top: 40%;
+    position: relative; }
+    .menu_map img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+    .menu_map iframe {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: none;
+      width: 100%;
+      height: 100%; }
   .menu_toggler {
     display: inline-block;
     width: 50px;
