@@ -1454,6 +1454,18 @@ Vue.use(VueTheMask);
       }
     },
     methods: {
+      setModalOpenedClassToBody() {
+        document.body.classList.add('body-with_modal');
+      },
+      setModalClosedClassToBody() {
+        document.body.classList.remove('body-with_modal');
+      },
+      setMenuOpenedClassToBody() {
+        document.body.classList.add('body-with_menu');
+      },
+      setMenuClosedClassToBody() {
+        document.body.classList.remove('body-with_menu');
+      },
       setCalcResults(data) {
         this.calcResults = data;
       },
@@ -1465,11 +1477,11 @@ Vue.use(VueTheMask);
       },
       openCalcModal() {
         this.showCalcModal = true;
-        document.body.style.overflow = 'hidden';
+        this.setModalOpenedClassToBody();
       },
       closeCalcModal() {
         this.showCalcModal = false;
-        document.body.style.overflow = null;
+        this.setModalClosedClassToBody();
       },
       handleIsCalcFixed(width = this.windowWidth) {
         this.isCalcRequiresFixed = width < calculatorBreakpoint;
@@ -1506,11 +1518,11 @@ Vue.use(VueTheMask);
       },
       openMenu() {
         this.isMenuOpened = true;
-        document.body.style.overflow = 'hidden';
+        this.setMenuOpenedClassToBody();
       },
       closeMenu() {
         this.isMenuOpened = false;
-        document.body.style.overflow = null;
+        this.setMenuClosedClassToBody();
       },
       langButtonPressed(lang) {
         if (this.selectedLang === lang) {
@@ -1580,20 +1592,20 @@ Vue.use(VueTheMask);
       },
       closeModal() {
         this.showModal = false;
-        document.body.style.overflow = null;
+        this.setModalClosedClassToBody();
       },
       openModal() {
         this.showModal = true;
-        document.body.style.overflow = 'hidden';
+        this.setModalOpenedClassToBody();
       },
       closeSuccessModal() {
         this.showSuccess = false;
         this.request = 'clean';
-        document.body.style.overflow = null;
+        this.setModalClosedClassToBody();
       },
       openSuccessModal() {
         this.showSuccess = true;
-        document.body.style.overflow = 'hidden';
+        this.setModalOpenedClassToBody();
       },
       getWindowScrollTop() {
         this.windowScrollTop = window.scrollY;
